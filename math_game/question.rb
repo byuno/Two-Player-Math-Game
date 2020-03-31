@@ -13,12 +13,17 @@ class Question
   end
 
   def answer?(player_answer)
-    player_answer == self.addition
+    player_answer == @addition
+  end
+
+  def answer
+    @addition
   end
 
 end
 
-question1 = Question.new()
-puts question1.question
-puts question1.answer?(40)
+# question1 = Question.new()
+# puts question1.question
+# puts question1.answer?(40)
+
 

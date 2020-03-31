@@ -8,7 +8,11 @@ class Player
   end
 
   def lost_life
-    self.lives -= 1
+    @lives -= 1
+  end
+
+  def finished
+    @lives == 0
   end
 
 end
